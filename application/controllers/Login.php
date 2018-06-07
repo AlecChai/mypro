@@ -26,7 +26,9 @@ class Login extends CI_Controller
 	{
 		
 		if (!$_POST) return;
+		
 		extract($_POST);
+		
 		
 		if (!$username || !$password) {
 			$arr_error = ['login_error' => '用户与密码不能为空'];

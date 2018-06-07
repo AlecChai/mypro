@@ -26,6 +26,7 @@ class User extends MY_Controller
 		if ($realname) $wh['realname'] = $realname;
 		if ($status!='') $wh['status'] = $status;
 		
+		
 		$currentpage = element('currentPage', $_POST, 1);
 		$pagesize = element('pageSize', $_POST, 10);
 		$page = ($currentpage - 1) * $pagesize;

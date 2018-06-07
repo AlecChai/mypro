@@ -109,7 +109,7 @@
 						
 					</el-table-column>
 					
-					
+			
 					<el-table-column label="激活状态" width="80" align="center">
 						<template scope="scope">
 							<span v-if="scope.row.status==1">已激活</span>
@@ -454,7 +454,7 @@
 
                 var that = this;
                 Vue.http.post('/user/index', option, {emulateJSON: true}).then(function (response) {
-                	
+                	console.log(typeof response.body.data);
 					that.tableData = response.body.data;
 					that.total = response.body.total;
                     // that.dropdown = response.body.data.dropdown;

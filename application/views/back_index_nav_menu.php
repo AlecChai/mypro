@@ -29,16 +29,23 @@
 				
                 <el-tooltip class="item" effect="light" content="店铺管理" placement="right"
                             :disabled="isDisabled">
-                    <el-menu-item index="collect/collect-m.html" @click="changeUrl">
+                    <el-menu-item index="v/store.html" @click="changeUrl">
                         <i class="fa fa-pencil"></i>
                         <span class="layout-text-block">店铺管理</span>
                     </el-menu-item>
                 </el-tooltip>
                 <el-tooltip class="item" effect="light" content="分类管理" placement="right"
                             :disabled="isDisabled">
-                    <el-menu-item index="zhiping/seller/zhiping-m.html" @click="changeUrl">
+                    <el-menu-item index="v/category.html" @click="changeUrl">
                         <i class="fa fa-pencil"></i>
                         <span class="layout-text-block">分类管理</span>
+                    </el-menu-item>
+                </el-tooltip>
+                <el-tooltip class="item" effect="light" content="EAN管理" placement="right"
+                            :disabled="isDisabled">
+                    <el-menu-item index="v/ean.html" @click="changeUrl">
+                        <i class="fa fa-pencil"></i>
+                        <span class="layout-text-block">EAN管理</span>
                     </el-menu-item>
                 </el-tooltip>
                 <el-tooltip class="item" effect="light" content="产品管理" placement="right"
